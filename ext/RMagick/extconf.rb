@@ -164,7 +164,7 @@ elsif RUBY_PLATFORM =~ /mingw/  # mingw
   `convert -version` =~ /Version: ImageMagick (\d+\.\d+\.\d+)-\d+ /
   abort "Unable to get ImageMagick version" unless $1
   $magick_version = $1
-  $LOCAL_LIBS = '-lCORE_RL_magick_ -lX11'
+  $LOCAL_LIBS = '-lCORE_RL_magick_'
 
 else  # mswin
 
